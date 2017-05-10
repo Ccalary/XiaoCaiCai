@@ -70,8 +70,8 @@
 @property(nonatomic, strong) NSString *companyId;
 @property(nonatomic, strong) NSString *companyName;
 
-@property (nonatomic, strong)NSString *piceYuan;
-@property (nonatomic, strong)NSString *time;
+//@property (nonatomic, strong)NSString *piceYuan;
+//@property (nonatomic, strong)NSString *time;
 
 @end
 
@@ -367,8 +367,7 @@
             weakSelf.bottomView = [[LCActionSheet alloc]initWithTitle:nil buttonTitles:weakSelf.timeArray redButtonIndex:-1 delegate:weakSelf];
             [_bottomView show];
             UIButton *myButton = (UIButton *)[weakSelf.view viewWithTag:1025];
-            weakSelf.time = myButton.titleLabel.text;
-//            __weak ReleaseVC *wSelf = self;
+
             _bottomView.didClickedButtonAtIndex = ^(NSInteger buttonIndex,NSString *title){
                 
                 [myButton setTitle:title forState:UIControlStateNormal];
@@ -376,7 +375,6 @@
                 [myButton setImage:[UIImage imageNamed:@"icon_xiala2"] forState:UIControlStateNormal];
                 [myButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:5];
                 expireDays = weakSelf.timeArray1[buttonIndex];
-                weakSelf.time = myButton.titleLabel.text;
 
             };
 
@@ -387,12 +385,12 @@
             weakSelf.bottomView = [[LCActionSheet alloc]initWithTitle:nil buttonTitles:weakSelf.princeArray redButtonIndex:-1 delegate:weakSelf];
             [_bottomView show];
             UIButton *myButton = (UIButton *)[weakSelf.view viewWithTag:1026];
-            weakSelf.piceYuan = myButton.titleLabel.text;
+            
             _bottomView.didClickedButtonAtIndex = ^(NSInteger buttonIndex,NSString *title){
                 [myButton setTitle:title forState:UIControlStateNormal];
                 [myButton setImage:[UIImage imageNamed:@"icon_xiala2"] forState:UIControlStateNormal];
                 [myButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleRight imageTitleSpace:5];
-                weakSelf.piceYuan = myButton.titleLabel.text;
+                
                 price = weakSelf.princeArray1[buttonIndex];
             };
 
@@ -612,20 +610,21 @@
         return;
         
     }
-    if (!self.piceYuan) {
-        [LCProgressHUD showFailure:@"请选悬赏金额"];
-        return;
-    }
-    if (!self.time) {
-        [LCProgressHUD showFailure:@"请截稿周期"];
-        return;
-    }
-    
     if (textView.text.length == 0) {
         [LCProgressHUD showFailure:@"请输入具体描述"];
         return;
     }
-    //获取本机IP
+
+    if (!expireDays.length) {
+        [LCProgressHUD showFailure:@"请截稿周期"];
+        return;
+    }
+    
+    if (!price.length) {
+        [LCProgressHUD showFailure:@"请选悬赏金额"];
+        return;
+    }
+          //获取本机IP
     NSString *addressIp = [ToolsHelper getIPAddress];
     NSMutableDictionary *params = [CBConnect getBaseRequestParams];
     [params setValue:@"1" forKey:@"taskMode"];//任务所属模块 1-悬赏起名2-大师起名
