@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>http</key>
+	<string>WebViewController</string>
+	<key>https</key>
+	<string>WebViewController</string>
+	<key>dariel</key>
+	<dict>
+		<key>dariel://LoginVC</key>
+		<string>LoginVC</string>
+		<key>dariel://PingTuanMainVC</key>
+		<string>PingTuanMainVC</string>
+		<key>dariel://ShangChengMainVC</key>
+		<string>ShangChengMainVC</string>
+		<key>dariel://ShouYeMainVC</key>
+		<string>ShouYeMainVC</string>
+		<key>dariel://WoDeMainVC</key>
+		<string>WoDeMainVC</string>
+		<key>dariel://ZhiBoMainVC</key>
+		<string>ZhiBoMainVC</string>
+		<key>dariel://ZhuCeVC</key>
+		<string>ZhuCeVC</string>
+		<key>dariel://RetrievePwdVC</key>
+		<string>RetrievePwdVC</string>
+		<key>dariel://ForgetPwdVC</key>
+		<string>ForgetPwdVC</string>
+		<key>dariel://MyFollowVC</key>
+		<string>MyFollowVC</string>
+		<key>dariel://PerfectInfoVC</key>
+		<string>PerfectInfoVC</string>
+		<key>dariel://ChangePwdVC</key>
+		<string>ChangePwdVC</string>
+		<key>dariel://YiJianFanKuiVC</key>
+		<string>YiJianFanKuiVC</string>
+		<key>dariel://DaRenZhuYeVC</key>
+		<string>DaRenZhuYeVC</string>
+		<key>dariel://AboutUsVC</key>
+		<string>AboutUsVC</string>
+		<key>dariel://ShopSearchVC</key>
+		<string>ShopSearchVC</string>
+		<key>dariel://WoDeErWeiMaVC</key>
+		<string>WoDeErWeiMaVC</string>
+		<key>dariel://CommodityDetailVC</key>
+		<string>CommodityDetailVC</string>
+		<key>dariel://AddAddressVC</key>
+		<string>AddAddressVC</string>
+		<key>dariel://AddressListVC</key>
+		<string>AddressListVC</string>
+		<key>dariel://ShopCarVC</key>
+		<string>ShopCarVC</string>
+		<key>dariel://MyCollectionListVC</key>
+		<string>MyCollectionListVC</string>
+	</dict>
+</dict>
+</plist>
