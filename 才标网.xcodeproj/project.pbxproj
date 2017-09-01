@@ -3504,11 +3504,11 @@
 				TargetAttributes = {
 					D544E0011E53E5BA009A448D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = K8ZU32S6J5;
+						DevelopmentTeam = 2M227336GQ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -4170,10 +4170,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "才标网/才标网.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K8ZU32S6J5;
+				DEVELOPMENT_TEAM = 2M227336GQ;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4186,10 +4185,7 @@
 					"$(PROJECT_DIR)/才标网/Classes/ThirdClasses/ShareSDK/Support/Required",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/才标网/Supporting Files/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"/Users/caohouhong/Documents/无锡百纯/caibiao/1_qiming/4_src_ios/才标网/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK",
-					"/Users/baichun/Documents/无锡百纯/caibiao/1_qiming/4_src_ios/才标网/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK";
 				INFOPLIST_FILE = "$(SRCROOT)/才标网/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4215,10 +4211,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = "才标网/才标网.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K8ZU32S6J5;
+				DEVELOPMENT_TEAM = 2M227336GQ;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4231,10 +4226,7 @@
 					"$(PROJECT_DIR)/才标网/Classes/ThirdClasses/ShareSDK/Support/Required",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/才标网/Supporting Files/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"/Users/caohouhong/Documents/无锡百纯/caibiao/1_qiming/4_src_ios/才标网/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK",
-					"/Users/baichun/Documents/无锡百纯/caibiao/1_qiming/4_src_ios/才标网/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/才标网/Classes/ThirdClasses/PaySDK/AlipaySDK";
 				INFOPLIST_FILE = "$(SRCROOT)/才标网/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
