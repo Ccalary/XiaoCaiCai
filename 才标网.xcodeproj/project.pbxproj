@@ -3046,7 +3046,6 @@
 				D544E03B1E53ECEB009A448D /* AppDelegate */,
 				D544E0521E53ED6A009A448D /* Classes */,
 				0DAD4CE21E793165008018BB /* Public */,
-				D544E0A91E53ED6B009A448D /* Resource */,
 				D544E03E1E53ECEB009A448D /* Supporting Files */,
 			);
 			path = "才标网";
@@ -3285,13 +3284,6 @@
 				0DAD4CE51E7931CB008018BB /* NetUrlMaro.h */,
 			);
 			path = GloabalDefines;
-			sourceTree = "<group>";
-		};
-		D544E0A91E53ED6B009A448D /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		D544E0D81E53F2A8009A448D /* LCProgressHUD */ = {
